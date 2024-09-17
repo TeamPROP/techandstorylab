@@ -1,0 +1,137 @@
+/* CSS FOR GRID STYLING ANIMATIONS ETC */
+html {
+  --white: rgba(white);
+  --orange: rgba(#ea5054);
+  --pink: rgba(#e782a9);
+  --text: rgba(#233249);
+  --textbox: rgba(#ededed);
+}
+
+/* CONTINUE FOR DESKTOP STYLING */
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.smallProduct {
+  border: 1px solid #eddddd;
+  background-color: #ededed;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  background-color: #ea5054;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
+h3 {
+  color: #233249;
+  margin: 0;
+  padding: 10px;
+}
+
+p {
+  color: #233249;
+  margin: 0;
+  padding: 10px;
+}
+
+.reserve {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: #e782a9;
+  border: 1px solid #e782a9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* MOBILE FIRST VERSION */
+
+@media (max-width: 600px) {
+  /* FILL WITH MOBILE STYLING */
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px;
+    background-color: #233249;
+  }
+
+  header img {
+    width: 80px;
+    height: 20px;
+  }
+
+  header a {
+    background-color: white;
+  }
+
+  .language {
+    align-self: flex-end;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .smallProduct {
+    border: 1px solid #eddddd;
+    background-color: #ededed;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  h2 {
+    background-color: #ea5054;
+    color: white;
+    margin: 0;
+    padding: 10px;
+  }
+
+  h3 {
+    color: #233249;
+    margin: 0;
+    padding: 10px;
+  }
+
+  p {
+    color: #233249;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .reserve {
+    font-family: "roboto condensed", sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #e782a9;
+    border: 1px solid #e782a9;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
